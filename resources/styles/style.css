@@ -125,6 +125,7 @@ article h1 .second-word {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .main-container .missions-container {
@@ -200,9 +201,9 @@ article h1 .second-word {
     font-family: 'Lato', Helvetica, sans-serif;
     font-weight: 900;
     font-size: 1.2rem;
-    top: 1%;
-    left: 2%;
-    transform: translate(2%, -50%);
+    top: 0;
+    left: 0;
+    margin: 2% 3%;
     color: #A62103; 
     text-shadow: -2px -1px 1px #F2490C;
     opacity: 0.9;
@@ -348,4 +349,22 @@ nav a p {
     color: #9FA685;
     font-size: 0.6rem;
     font-family: 'Montserrat', Times, serif;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+    html, body {
+        font-size: 18px;
+        font-size: 1.7vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    html, body {
+        font-size: 18px;
+        font-size: 2vw;
+    }
+
+    .main-container img {
+        display: none;
+    }
 }
